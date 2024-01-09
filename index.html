@@ -2,15 +2,33 @@
 <html>
   <head>
     <meta charset="utf-8" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css">
     <title></title>
   </head>
   <body>
-    <img src="https://27182.github.io/a/pdf_page-0001.jpg"  style="max-width:100%; height:auto;">
-      <br><img src="https://27182.github.io/a/pdf_page-0002.jpg" style="max-width:100%; height:auto;">
-      <br><img src="https://27182.github.io/a/pdf_page-0003.jpg" style="max-width:100%; height:auto;">
-      <br><img src="https://27182.github.io/a/pdf_page-0004.jpg" style="max-width:100%; height:auto;">
-      <br><img src="https://27182.github.io/a/pdf_page-0005.jpg" style="max-width:100%; height:auto;">
-      <br><img src="https://27182.github.io/a/pdf_page-0006.jpg" style="max-width:100%; height:auto;">
-      <br><img src="https://27182.github.io/a/pdf_page-0007.jpg" style="max-width:100%; height:auto;">
+    <div id="fullpage">
+      <div class="section">
+    <img src="https://27182.github.io/a/pdf_page-0001.jpg"  style="max-width:100%; height:auto;"></div>
+      <br><div class="section"><img src="https://27182.github.io/a/pdf_page-0002.jpg" style="max-width:100%; height:auto;"></div>
+      <br><div class="section"><img src="https://27182.github.io/a/pdf_page-0003.jpg" style="max-width:100%; height:auto;"></div>
+      <br><div class="section"><img src="https://27182.github.io/a/pdf_page-0004.jpg" style="max-width:100%; height:auto;"></div>
+      <br><div class="section"><img src="https://27182.github.io/a/pdf_page-0005.jpg" style="max-width:100%; height:auto;"></div>
+      <br><div class="section"><img src="https://27182.github.io/a/pdf_page-0006.jpg" style="max-width:100%; height:auto;"></div>
+      <br><div class="section"><img src="https://27182.github.io/a/pdf_page-0007.jpg" style="max-width:100%; height:auto;"></div>
+    </div>
   </body>
+  <script>
+    $(document).ready(function() {
+	$('#fullpage').fullpage({
+		//options here
+		autoScrolling:true,
+		scrollHorizontally: true
+	});
+ 
+	//methods
+	$.fn.fullpage.setAllowScrolling(false);
+});
+  </script>
 </html>
